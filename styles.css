@@ -1,0 +1,73 @@
+.intro {
+	max-height: 55vw;
+	overflow: hidden;
+}
+
+.home-intro {
+	display: none;
+}
+
+ u {
+    text-decoration: none;
+    border-bottom: 7px solid #3B4749;
+    padding-bottom: 0%;
+    font-family: 'DM Mono Lite', monospace;
+	font-size: 80pt;
+	font-weight: 100;
+	margin-bottom: -5px !important;
+	color:#3B4749;
+  }​
+
+h1 {
+	font-family: 'DM Mono Lite', monospace;
+	font-size: 80pt;
+	font-weight: 100;
+	margin-bottom: 10%;
+	margin-top: 0;
+	color:#3B4749;
+}
+
+h2 {
+	font-family: 'DM Mono Lite', monospace;
+	font-size: 40pt;
+	font-weight: 100;
+	color:#3B4749;
+}
+
+button {
+	font-family: 'DM Mono Lite', monospace;
+	font-size: 20pt;
+	font-weight: 400;
+	color:#3B4749;
+	border-radius: 10px;
+	border:0px black solid;
+	padding:1% 1.5%;
+	background-color:#3B4749;
+	color: #F5F5EC;
+}
+
+p {
+	font-family: 'DM Mono', monospace;
+	font-size: 20pt;
+	font-weight: 400;
+	color:#3B4749;
+}
+
+.home-description{
+	width: 50%;
+}
+
+@font-face {
+  font-family: "DM Mono";
+  src: url("fonts/DMMono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DM Mono Lite";
+  src: url("fonts/DMMono-light.ttf") format("truetype");
+}
+
+
+body {
+	padding: 3% 6% 6% 6%;
+	background-color:#F5F5EC;
+}
