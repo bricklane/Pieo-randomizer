@@ -50,6 +50,40 @@ $(".roll").click(function(){
 $(document).ready(function(){  
   $(".bodymovinanim").click(function(){
   	console.log("twerks");
+  	  //pick a random hex
+  let hex = hexArray[Math.floor(Math.random()*hexArray.length)];
+  console.log(hex);
+
+  //get a random prompt
+  let prompt = promptArray[Math.floor(Math.random()*promptArray.length)];
+  console.log(prompt);
+
+  //get a random input
+  let input = inputArray[Math.floor(Math.random()*inputArray.length)];
+  console.log(input);
+
+  //get a random output
+  let output = outputArray[Math.floor(Math.random()*outputArray.length)];
+  console.log(output);
+
+  //get a random evoke
+  let evoke = evokeArray[Math.floor(Math.random()*evokeArray.length)];
+  console.log(evoke);
+
+  $("body").removeClass()
+  $("body").addClass( hex + "-bg");
+  
+  $(".prompt-result").empty();
+  $(".prompt-result").append( prompt );
+
+  $(".input-result").empty();
+  $(".input-result").append( input );
+
+  $(".output-result").empty();
+  $(".output-result").append( output );
+
+  $(".evoke-result").empty();
+  $(".evoke-result").append( evoke );
   });
   
 }); 
