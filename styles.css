@@ -1,6 +1,15 @@
 .intro {
 	max-height: 55vw;
 	overflow: hidden;
+	position: fixed;
+	top: 0;
+	opacity: 100%;
+}
+
+.get-results {
+	transition: all 1s;
+	top: -700px;
+	opacity: 0%;
 }
 
 .home-intro {
