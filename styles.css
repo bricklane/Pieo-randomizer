@@ -1,3 +1,9 @@
+.bodymovinanim {
+	width: 36%;
+	margin: 0 auto;
+	fill: white;
+}
+
 .result {
 	margin-top: 2%;
 }
@@ -15,10 +21,10 @@
 
 .results {
 	position: fixed;
-	top: 41%;
+	top: 38%;
 	left: 50%;
 	margin-top: -100px; /* Negative half of height. */
-	margin-left: -125px; /* Negative half of width. */
+	margin-left: -250px; /* Negative half of width. */
 	text-align: center;
 	opacity: 0%;
 }

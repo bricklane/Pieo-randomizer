@@ -42,7 +42,36 @@ $(".roll").click(function(){
   //$("body").css({"background-color": "#" + hex }) 
   });
   
-});  
+}); 
+
+
+//refresh results
+
+$(document).ready(function(){  
+  $(".bodymovinanim").click(function(){
+  	console.log("twerks");
+  });
+  
+}); 
+
+
+
+$(document).ready(function(){ 
+/* Play an animation on each click */
+    let iconSkipForward = document.querySelector('.bodymovinanim');
+
+    let animationSkipForward = bodymovin.loadAnimation({
+            container: iconSkipForward,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "https://assets3.lottiefiles.com/packages/lf20_vtkhpebf.json"
+    });
+
+      iconSkipForward.addEventListener('click', function() {
+      animationSkipForward.playSegments([0,192], true);
+    }); 
+  });
 
 
 
