@@ -8,12 +8,11 @@
 <link rel="stylesheet" href="styles.css">
 <script src="pioe.js" type="text/javascript"></script>
 
-
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 
 
 </head>
-
 
 <body>
 <div class="intro">
@@ -25,9 +24,25 @@
 <br>
 <br>
 
-
 <h2 class="home-description"> A tool to prompt imagination and selectivity.</h2>
 
 <button class="roll">Roll</button>
 </div>
+
+<div class="results">
+	<p class="category">PROMPT</p>
+	<p class="prompt-result result" id="prompt-result"></p>
+
+	<p class="category">INPUT</p>
+	<p class="input-result result"></p>
+
+	<p class="category">OUTPUT</p>
+	<p class="output-result result"></p>
+
+	<p class="category">EVOKE</p>
+	<p class="evoke-result result"></p>
+
+	<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_mAr4v1.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"    ></lottie-player>
+</div>
+
 </body>
