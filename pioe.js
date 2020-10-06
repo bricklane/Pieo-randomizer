@@ -10,7 +10,7 @@ $(".roll").click(function(){
 	
   console.log("hello");	
   $(".intro").addClass('get-results');
-  $(".results").animate({ opacity: 1.0 });
+  $(".results").delay(800).animate({ opacity: 1.0 }, 1000);
 
   //pick a random hex
   let hex = hexArray[Math.floor(Math.random()*hexArray.length)];
@@ -73,21 +73,41 @@ $(document).ready(function(){
   $("body").removeClass()
   $("body").addClass( hex + "-bg");
   
-  $(".prompt-result").empty();
-  $(".prompt-result").append( prompt );
+  //fade out prompt, empty, add new value, fade back in
+  $(".prompt-result").animate({ opacity: 0.0 }, 500, function(){
+    $(".prompt-result").empty();
+    $(".prompt-result").append( prompt );
+});
+  $(".prompt-result").animate({ opacity: 1.0 }, 500, function(){   
+});
 
-  $(".input-result").empty();
-  $(".input-result").append( input );
+    //fade out input, empty, add new value, fade back in
+  $(".input-result").animate({ opacity: 0.0 }, 500, function(){
+    $(".input-result").empty();
+    $(".input-result").append( input );
+});
+  $(".input-result").animate({ opacity: 1.0 }, 500, function(){
+});
 
-  $(".output-result").empty();
-  $(".output-result").append( output );
+    //fade out output, empty, add new value, fade back in
+  $(".output-result").animate({ opacity: 0.0 }, 500, function(){
+    $(".output-result").empty();
+    $(".output-result").append( output );
+});
+  $(".output-result").animate({ opacity: 1.0 }, 500, function(){
+});
 
-  $(".evoke-result").empty();
-  $(".evoke-result").append( evoke );
+    //fade out evoke, empty, add new value, fade back in
+  $(".evoke-result").animate({ opacity: 0.0 }, 500, function(){
+    $(".evoke-result").empty();
+    $(".evoke-result").append( evoke );
+});
+  $(".evoke-result").animate({ opacity: 1.0 }, 500, function(){
+});
+
   });
   
 }); 
-
 
 
 $(document).ready(function(){ 
