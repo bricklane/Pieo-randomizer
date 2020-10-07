@@ -1,3 +1,4 @@
+
 canvas {
     display: block;
 }
@@ -67,10 +68,10 @@ canvas {
 
 .results {
 	position: fixed;
-	top: 38%;
+	top: 34%;
 	left: 50%;
 	margin-top: -100px; /* Negative half of height. */
-	margin-left: -250px; /* Negative half of width. */
+	margin-left: -205px; /* Negative half of width. */
 	text-align: center;
 	opacity: 0%;
 }
@@ -125,6 +126,9 @@ canvas {
 	top: 0;
 	opacity: 100%;
 }
+
+
+
 
 .get-results {
 	max-height: 0vw;
@@ -199,4 +203,22 @@ p {
 body {
 	padding: 6% 6% 6% 6%;
 	background-color:#F5F5EC;
+}
+
+@media screen and (max-width: 600px) {
+	.intro {
+		max-height: 205vw !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.roll {
+		padding:3% 3.5%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h2 {
+		font-size: 25pt;
+	}
 }
