@@ -221,14 +221,20 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-	h1 {
+	h1 u {
 		font-size: 30pt;
 	}
 }
 
 @media screen and (max-width: 600px) {
-	h2 {
+	p {
 		font-size: 15pt;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h2 {
+		font-size: 20pt;
 	}
 }
 
