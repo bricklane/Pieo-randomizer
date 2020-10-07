@@ -71,7 +71,7 @@ canvas {
 	top: 34%;
 	left: 50%;
 	margin-top: -100px; /* Negative half of height. */
-	margin-left: -205px; /* Negative half of width. */
+	margin-left: -250px; /* Negative half of width. */
 	text-align: center;
 	opacity: 0%;
 }
@@ -125,6 +125,7 @@ canvas {
 	position: fixed;
 	top: 0;
 	opacity: 100%;
+	padding: 6%;
 }
 
 
@@ -201,7 +202,6 @@ p {
 
 
 body {
-	padding: 6% 6% 6% 6%;
 	background-color:#F5F5EC;
 }
 
@@ -220,5 +220,11 @@ body {
 @media screen and (max-width: 600px) {
 	h2 {
 		font-size: 25pt;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.results {
+		margin-left: -205px;
 	}
 }
